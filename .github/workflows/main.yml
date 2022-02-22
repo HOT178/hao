@@ -1,4 +1,18 @@
-# build a simple docker image from nginx
+- 名称：构建和推送 Docker 镜像
+  # 你可以固定到确切的提交或版本。
+  # 使用：docker/build-push-action@7f9d37fa544684fb73bfe4835ed7214c255ce02b
+ 
+    # 自定义主机到 IP 映射列表（例如，docker:10.180.0.1）
+     # 额外特权列表（例如 network.host,security.insecure）
+    # 构建时变量列表
+    # 构建器实例
+    # buildx 的外部缓存源列表（例如，user/app:cache, type=local,src=path/to/dir）
+     # buildx 的缓存导出目的地列表（例如，user/app:cache, type=local,dest=path/to/dir）
+     # 构建中使用的容器的可选父 cgroup
+    # cgroup-parent: # 可选
+    # Build 的上下文是位于指定 PATH 或 URL 中的文件集
+ 
+
 docker build -t hao .
 
 # run a container
